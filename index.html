@@ -855,7 +855,7 @@ footer { background: #0e0d09; padding: 64px 0 26px; }
 .intro-slide {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: 0; transition: opacity 0.06s ease;
+  opacity: 0; transition: opacity 0.28s ease;
 }
 .intro-slide.on { opacity: 1; }
 #intro-fade {
@@ -1234,7 +1234,7 @@ function runIntroMontage(callback) {
   fade.style.cssText = 'position:absolute;inset:0;background:#0e0d09;opacity:0;pointer-events:none;';
   if(logo){ logo.style.opacity = 0; }
 
-  var i = 0, FRAME = 150;
+  var i = 0, FRAME = 260;
   function tick() {
     if (i > 0) slides[i-1].classList.remove('on');
     if (i < slides.length) {
